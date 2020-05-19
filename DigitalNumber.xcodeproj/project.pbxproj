@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0077C430F04D9ED4E1B7E8F5 /* libPods-DigitalNumber.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F63CCF23E40AF41B75FBFA1F /* libPods-DigitalNumber.a */; };
 		BF8A1AF72473FACC00F9A1BB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF8A1AF62473FACC00F9A1BB /* AppDelegate.swift */; };
 		BF8A1AF92473FACC00F9A1BB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF8A1AF82473FACC00F9A1BB /* SceneDelegate.swift */; };
 		BF8A1AFB2473FACC00F9A1BB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF8A1AFA2473FACC00F9A1BB /* ViewController.swift */; };
@@ -16,6 +17,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		09CC657FCECEF36FF1697BD5 /* Pods-DigitalNumber.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DigitalNumber.debug.xcconfig"; path = "Target Support Files/Pods-DigitalNumber/Pods-DigitalNumber.debug.xcconfig"; sourceTree = "<group>"; };
+		B52528204971B64A1F11F5BB /* Pods-DigitalNumber.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DigitalNumber.release.xcconfig"; path = "Target Support Files/Pods-DigitalNumber/Pods-DigitalNumber.release.xcconfig"; sourceTree = "<group>"; };
 		BF8A1AF32473FACC00F9A1BB /* DigitalNumber.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DigitalNumber.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BF8A1AF62473FACC00F9A1BB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BF8A1AF82473FACC00F9A1BB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +27,7 @@
 		BF8A1AFF2473FACE00F9A1BB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BF8A1B022473FACE00F9A1BB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BF8A1B042473FACE00F9A1BB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F63CCF23E40AF41B75FBFA1F /* libPods-DigitalNumber.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-DigitalNumber.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +35,38 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0077C430F04D9ED4E1B7E8F5 /* libPods-DigitalNumber.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		389068D350FB9011B792E16A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F63CCF23E40AF41B75FBFA1F /* libPods-DigitalNumber.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		4A590D76AA5AE2F46E94CB52 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				09CC657FCECEF36FF1697BD5 /* Pods-DigitalNumber.debug.xcconfig */,
+				B52528204971B64A1F11F5BB /* Pods-DigitalNumber.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		BF8A1AEA2473FACC00F9A1BB = {
 			isa = PBXGroup;
 			children = (
 				BF8A1AF52473FACC00F9A1BB /* DigitalNumber */,
 				BF8A1AF42473FACC00F9A1BB /* Products */,
+				4A590D76AA5AE2F46E94CB52 /* Pods */,
+				389068D350FB9011B792E16A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -74,6 +99,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = BF8A1B072473FACE00F9A1BB /* Build configuration list for PBXNativeTarget "DigitalNumber" */;
 			buildPhases = (
+				71932FEFB94CA31ECE6C361C /* [CP] Check Pods Manifest.lock */,
 				BF8A1AEF2473FACC00F9A1BB /* Sources */,
 				BF8A1AF02473FACC00F9A1BB /* Frameworks */,
 				BF8A1AF12473FACC00F9A1BB /* Resources */,
@@ -132,6 +158,31 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		71932FEFB94CA31ECE6C361C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-DigitalNumber-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		BF8A1AEF2473FACC00F9A1BB /* Sources */ = {
@@ -282,6 +333,7 @@
 		};
 		BF8A1B082473FACE00F9A1BB /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 09CC657FCECEF36FF1697BD5 /* Pods-DigitalNumber.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -299,6 +351,7 @@
 		};
 		BF8A1B092473FACE00F9A1BB /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B52528204971B64A1F11F5BB /* Pods-DigitalNumber.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
