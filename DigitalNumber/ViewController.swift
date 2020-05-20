@@ -33,6 +33,9 @@ class ViewController: UIViewController {
         }
     }
     
+    @IBAction func clearResultView(_ sender: Any) {
+        self.valueShowView.text = "";
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
         self.valueContainer.map({ (a:UInt64) -> String in
@@ -95,6 +98,12 @@ class ViewController: UIViewController {
         
     }
     
+    
+    
+    
+}
+
+extension ViewController{
     //质数判断
     func isPrime(aNum:UInt64)-> Observable<UInt64>{
         
@@ -120,6 +129,4 @@ class ViewController: UIViewController {
             }
         }
     }
-    
-    
 }

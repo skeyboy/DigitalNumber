@@ -20,7 +20,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" keyboardType="decimalPad" textContentType="tel"/>
                             </textField>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="结果展示" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="kdD-3k-1Dd">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="结果展示" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kdD-3k-1Dd">
                                 <rect key="frame" x="20" y="215" width="374" height="250"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <constraints>
@@ -30,16 +30,26 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5cL-sn-5ht">
+                                <rect key="frame" x="312" y="108" width="62" height="30"/>
+                                <state key="normal" title="清除结果"/>
+                                <connections>
+                                    <action selector="clearResultView:" destination="BYZ-38-t0r" eventType="touchUpInside" id="R8g-F2-ctM"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="kdD-3k-1Dd" secondAttribute="trailing" constant="20" id="5zS-aQ-dqS"/>
                             <constraint firstItem="kdD-3k-1Dd" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="IYs-Db-i4o"/>
                             <constraint firstItem="59A-6l-IY1" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="70" id="KJT-kD-H48"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="kdD-3k-1Dd" secondAttribute="bottom" constant="75" id="SFd-sQ-L2B"/>
+                            <constraint firstItem="5cL-sn-5ht" firstAttribute="centerY" secondItem="59A-6l-IY1" secondAttribute="centerY" id="RAY-Ac-UPU"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="kdD-3k-1Dd" secondAttribute="bottom" id="SFd-sQ-L2B"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="59A-6l-IY1" secondAttribute="trailing" constant="126" id="dxh-VW-gl2"/>
+                            <constraint firstItem="5cL-sn-5ht" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="59A-6l-IY1" secondAttribute="trailing" constant="8" symbolic="YES" id="k8u-qg-ZmZ"/>
                             <constraint firstItem="kdD-3k-1Dd" firstAttribute="top" secondItem="59A-6l-IY1" secondAttribute="bottom" constant="75" id="n3d-Xs-202"/>
                             <constraint firstItem="59A-6l-IY1" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="62" id="oZL-y7-o2N"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="5cL-sn-5ht" secondAttribute="trailing" constant="40" id="pvg-n6-bdv"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
